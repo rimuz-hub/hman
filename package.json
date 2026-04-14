@@ -8,6 +8,8 @@
     "dev:client": "npm run dev --prefix client",
     "build:client": "npm run build --prefix client",
     "build": "npm run build:client",
+    "predeploy": "npm run build:client",
+    "deploy": "gh-pages -d client/dist",
     "start": "node server/index.js"
   },
   "devDependencies": {
