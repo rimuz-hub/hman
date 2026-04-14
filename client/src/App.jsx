@@ -5,7 +5,7 @@ import Room from './pages/Room'
 import Game from './pages/Game'
 import ConnectionStatus from './components/ConnectionStatus'
 
-const SERVER = import.meta.env.VITE_SERVER_URL || 'http://localhost:4000'
+const SERVER = import.meta.env.DEV ? 'http://localhost:4000' : ''
 
 export const SocketContext = React.createContext()
 
