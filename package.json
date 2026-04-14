@@ -1,0 +1,17 @@
+{
+  "name": "hangman-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "build:client": "npm run build --prefix client",
+    "build": "npm run build:client",
+    "start": "node server/index.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "gh-pages": "^6.3.0"
+  }
+}
